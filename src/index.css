@@ -17,8 +17,16 @@ html {
     @apply font-cursive text-4xl font-bold text-center my-4;
   }
 
-  .link {
-    @apply p-4;
+  .article-heading-border {
+    @apply inline-block border-b-4 border-gray-400;
+  }
+
+  .nav-link {
+    @apply px-8 py-4;
+  }
+
+  .nav-link-border {
+    @apply inline-block border-b-2 border-gray-400;
   }
 
   .button-group {
