@@ -7,51 +7,50 @@
   <title>Ben & Lauren"s Wedding Celebration</title>
 </head>
 
-<body class="">
-  <div class="container">
-    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-75 backdrop-filter backdrop-blur-sm shadow-lg">
-      <div class="text-center">
-        <h1 class='mt-2 font-cursive'>
-          <div class="text-5xl font-bold">Lauren & Ben's</div>
-          <div class='text-3xl'>Wedding Celebration</div>
-        </h1>
-        <nav class='flex flex-col justify-center'>
-          <button id="links-toggle" class='flex justify-center p-4 md:hidden' type='button'>
-            <img src="src/images/icons8-menu.svg" />
-          </button>
-          <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center overflow-hidden'>
-            <a class='nav-link' href="#events">
-              <div class='nav-link-border border-green-400'>Events</div>
-            </a>
-            <a class='nav-link' href="#hotels">
-              <div class='nav-link-border border-blue-400'>Hotels</div>
-            </a>
-            <a class='nav-link' href="#rsvp">
-              <div class='nav-link-border border-purple-400'>RSVP</div>
-            </a>
-            <a class='nav-link' href="#gifts">
-              <div class='nav-link-border border-pink-400'>Gifts</div>
-            </a>
-            <a class='nav-link mb-4 md:mb-0' href="#faq">
-              <div class='nav-link-border border-yellow-400'>FAQ</div>
-            </a>
-          </div>
-        </nav>
-      </div>
-  </div>
+<body>
+  <main class='container m-auto'>
+  <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-75 backdrop-filter backdrop-blur-sm shadow-lg">
+    <div class="text-center">
+      <h1 class='mt-2 font-cursive'>
+        <div class="text-5xl font-bold">Lauren & Ben's</div>
+        <div class='text-3xl'>Wedding Celebration</div>
+      </h1>
+      <nav class='flex flex-col justify-center'>
+        <button id="links-toggle" class='flex justify-center p-4 md:hidden' type='button'>
+          <img src="src/images/icons8-menu.svg" />
+        </button>
+        <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center overflow-hidden'>
+          <a class='nav-link' href="#events">
+            <div class='nav-link-border border-green-400'>Events</div>
+          </a>
+          <a class='nav-link' href="#hotels">
+            <div class='nav-link-border border-blue-400'>Hotels</div>
+          </a>
+          <a class='nav-link' href="#rsvp">
+            <div class='nav-link-border border-purple-400'>RSVP</div>
+          </a>
+          <a class='nav-link' href="#gifts">
+            <div class='nav-link-border border-pink-400'>Gifts</div>
+          </a>
+          <a class='nav-link mb-4 md:mb-0' href="#faq">
+            <div class='nav-link-border border-yellow-400'>FAQ</div>
+          </a>
+        </div>
+      </nav>
+    </div>
   </header>
   <section class='mt-40 md:mt-48'>
-    <article>
+    <article class='article'>
       <div id="about"></div>
-      <div class='flex flex-col md:flex-row md:max-w-none items-center justify-center'>
-        <div class='md:w-2/5 mx-2 md:mx-0 md:pl-8'>
+      <div class='flex flex-col md:flex-row items-center justify-center'>
+        <div class='md:w-2/5'>
           <img class='w-full h-auto' src="./src/images/ceremony1.png"
             alt="Lauren & Ben getting married at Barnegat Light, NJ." />
         </div>
-        <div class='flex flex-col pt-2 px-4 md:px-8 md:w-3/5'>
+        <div class='flex flex-col pt-2 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5'>
           <p class='text-lg italic'><span class='font-cursive text-2xl'>On July 7th, 2021,</span> Ben
             Centra and Lauren DiCristofaro were wed in Barnegat Light, NJ. Due to the uncertainty of
-            the ongoing pandemic, we held a small but lovely ceremony for our immediate family. As we look forward to a
+            the pandemic, we held a small but lovely ceremony for our immediate family. As we look forward to a
             “new normal,” we happily invite our friends and extended family to come to Boston and celebrate with us!
           </p>
           <div class="button-group">
@@ -66,6 +65,51 @@
       <h2 class='article-heading'>
         <div class='article-heading-border border-green-400'>Events</div>
       </h2>
+      <div class='flex flex-col-reverse md:flex-row items-center justify-center mt-8'>
+        <div class='pt-2 md:pt-0 md:w-3/4 text-center'>
+          <h3 class='text-3xl font-cursive mb-4'>Hospitality Dinner</h3>
+          <ul>
+            <li class='font-bold'>Some Hotel Conference Room</li>
+            <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
+            <li>Saturday August 13th, 2022</li>
+            <li>5:00pm to 8:00pm</li>
+          </ul>
+          <p class='m-4 italic'>Come enjoy some light refreshments and say "hello" in a more relaxed environment.</p>
+        </div>
+        <div class="md:w-1/4">
+          <img src="./src/images/placeholder.jpg" />
+        </div>
+      </div>
+      <div class='flex flex-col md:flex-row items-center justify-center mt-8'>
+        <div class="md:w-1/4">
+          <img src="./src/images/placeholder.jpg" />
+        </div>
+        <div class='pt-2 md:pt-0 md:w-3/4 text-center'>
+          <h3 class='text-3xl font-cursive mb-4'>Wedding Celebration</h3>
+          <ul>
+            <li class='font-bold'>Lord Hobo Brewing Company</li>
+            <li><a class='link' href="#">5 Draper St, Woburn, MA 01801</a></li>
+            <li>Sunday August 14th, 2022</li>
+            <li>4:00pm to 8:00pm</li>
+          </ul>
+          <p class='m-4 italic'>Join us in celebrating our wedding the proper way with craft beer, delicious food, dancing, games, and more.</p>
+        </div>
+      </div>
+      <div class='flex flex-col-reverse md:flex-row items-center justify-center mt-8'>
+        <div class='pt-2 md:pt-0 md:w-3/4 text-center'>
+          <h3 class='text-3xl font-cursive mb-4'>Afterparty</h3>
+          <ul>
+            <li class='font-bold'>Some Bar Downtown</li>
+            <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
+            <li>Sunday August 14th, 2022</li>
+            <li>9:00pm to Midnight</li>
+          </ul>
+          <p class='m-4 italic'>Not done partying? We've reserved a room at some cool bar to keep the celebration going.</p>
+        </div>
+        <div class="md:w-1/4">
+          <img src="./src/images/placeholder.jpg" />
+        </div>
+      </div>
     </article>
     <article class='article'>
       <div id="hotels" class='article-anchor'></div>
@@ -95,7 +139,7 @@
   <footer>
     <p class='text-center my-4 text-gray-600 text-sm'>© 2022 Ben Centra</p>
   </footer>
-  </div>
+</main>
 </body>
 
 <script>
