@@ -9,10 +9,12 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = MiniCssExtractPlugin.loader;
 
+const distDir = path.resolve(__dirname, "dist");
+
 const config = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: distDir,
   },
   devServer: {
     open: true,
@@ -39,8 +41,12 @@ const config = {
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
 
       // Add your rules for custom modules here

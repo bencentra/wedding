@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   linksToggle.addEventListener('click', () => {
     links.classList.toggle('h-0')
-    console.log('lol')
+  })
+  links.childNodes.forEach(link => {
+    link.addEventListener('click', () => {
+      links.classList.add('h-0')
+    })
   })
 })

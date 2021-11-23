@@ -5,6 +5,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'cursive': ['Dancing Script', 'cursive']
+    },
     extend: {},
   },
   variants: {

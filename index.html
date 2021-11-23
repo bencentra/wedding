@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ben & Lauren"s Wedding Reception</title>
-  </head>
-  <body class="bg-blue-300">
-    <div class="container m-4 md:mx-16 lg:mx-32">
-      <header class="text-center">
-        <h1>
-          <div class="text-4xl">Lauren & Ben's</div>
-          <div class='text-2xl'>Wedding Reception</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben & Lauren"s Wedding Celebration</title>
+</head>
+
+<body class="">
+  <div class="container">
+    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-75 backdrop-filter backdrop-blur-sm shadow-lg">
+      <div class="text-center">
+        <h1 class='mt-2 font-cursive'>
+          <div class="text-5xl font-bold">Lauren & Ben's</div>
+          <div class='text-3xl'>Wedding Celebration</div>
         </h1>
         <nav class='flex flex-col justify-center'>
-          <button id="links-toggle" class='block p-4 md:hidden' type='button'>Menu</button>
+          <button id="links-toggle" class='flex justify-center p-4 md:hidden' type='button'>
+            <img src="src/images/icons8-menu.svg" />
+          </button>
           <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center overflow-hidden'>
             <a class='p-4' href="#events">Events</a>
             <a class='p-4' href="#hotels">Hotels</a>
             <a class='p-4' href="#rsvp">RSVP</a>
-            <a class='p-4' href="#contact">Contact</a>
+            <a class='p-4' href="#gifts">Gifts</a>
+            <a class='p-4' href="#faq">FAQ</a>
           </div>
         </nav>
-        <section class='h-96' id="events">Events</section>
-        <section class='h-96' id="hotels">Hotels</section>
-        <section class='h-96' id="rsvp">RSVP</section>
-        <section class='h-96' id="contact">Contact</section>
-      </header>
-    </div>
-  </body>
-  
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("service-worker.js")
-          .then((registration) => {
-              console.log("Service Worker registered: ", registration);
-          })
-          .catch((registrationError) => {
-              console.error("Service Worker registration failed: ", registrationError);
-          });
-      });
-    }
-  </script>
+      </div>
+  </div>
+  </header>
+  <section class='mt-40 md:mt-48'>
+    <article>
+      <div id="about"></div>
+      <div class='flex flex-col md:flex-row md:max-w-none items-center justify-center'>
+        <div class='md:w-2/5 mx-2 md:mx-0 md:pl-8'>
+          <img class='w-full h-auto' src="./src/images/ceremony1.png"
+            alt="Lauren & Ben getting married at Barnegat Light, NJ." />
+        </div>
+        <div class='flex flex-col pt-2 px-4 md:px-8 md:w-3/5'>
+          <p class='text-lg italic'><span class='font-cursive text-2xl'>On July 7th, 2021,</span> Ben
+            Centra and Lauren DiCristofaro were wed in Barnegat Light, NJ. Due to the uncertainty of
+            the ongoing pandemic, we held a small but lovely ceremony for our immediate family. As we look forward to a
+            “new
+            normal,” we happily invite our friends and extended family to come to Boston and celebrate with us!
+          </p>
+          <div class="button-group">
+            <a class='button' href="#">Watch the ceremony</a>
+            <a class='button' href="#">View wedding photos</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class='h-96'>
+      <div id="events" class='article-anchor'></div>
+      <h2 class='article-heading'>Events</div>
+    </article>
+    <article class='h-96'>
+      <div id="hotels" class='article-anchor'></div>
+      <h2 class='article-heading'>Hotels</div>
+    </article>
+    <article class='h-96'>
+      <div id="rsvp" class='article-anchor'></div>
+      <h2 class='article-heading'>RSVP</div>
+    </article>
+    <article class='h-96'>
+      <div id="gifts" class='article-anchor'></div>
+      <h2 class='article-heading'>Gifts</div>
+    </article>
+    <article class='h-96'>
+      <div id="faq" class='article-anchor'></div>
+      <h2 class='article-heading'>FAQ</div>
+    </article>
+  </section>
+  </div>
+</body>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then((registration) => {
+          console.log("Service Worker registered: ", registration);
+        })
+        .catch((registrationError) => {
+          console.error("Service Worker registration failed: ", registrationError);
+        });
+    });
+  }
+</script>
+
 </html>
