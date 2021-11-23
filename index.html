@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Ben & Lauren's Wedding Reception</title>
-    </head>
-    <body>
-        <h1 class='text-red-300'>Hello world!</h1>
-        <h2>Tip: Check your console</h2>
-    </body>
-    
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered: ", registration);
-                    })
-                    .catch((registrationError) => {
-                        console.error("Service Worker registration failed: ", registrationError);
-                    });
-            });
-        }
-    </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben & Lauren"s Wedding Reception</title>
+  </head>
+  <body class="bg-blue-300">
+    <div class="container m-4 md:mx-16 lg:mx-32">
+      <header class="text-center">
+        <h1>
+          <div class="text-4xl">Lauren & Ben's</div>
+          <div class='text-2xl'>Wedding Reception</div>
+        </h1>
+        <nav class='flex flex-col justify-center'>
+          <button id="links-toggle" class='block p-4 md:hidden' type='button'>Menu</button>
+          <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center overflow-hidden'>
+            <a class='p-4' href="#events">Events</a>
+            <a class='p-4' href="#hotels">Hotels</a>
+            <a class='p-4' href="#rsvp">RSVP</a>
+            <a class='p-4' href="#contact">Contact</a>
+          </div>
+        </nav>
+        <section class='h-96' id="events">Events</section>
+        <section class='h-96' id="hotels">Hotels</section>
+        <section class='h-96' id="rsvp">RSVP</section>
+        <section class='h-96' id="contact">Contact</section>
+      </header>
+    </div>
+  </body>
+  
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then((registration) => {
+              console.log("Service Worker registered: ", registration);
+          })
+          .catch((registrationError) => {
+              console.error("Service Worker registration failed: ", registrationError);
+          });
+      });
+    }
+  </script>
 </html>
