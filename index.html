@@ -20,26 +20,27 @@
             <img src="src/images/icons8-menu.svg" />
           </button>
           <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center overflow-hidden'>
-            <a class='nav-link' href="#events">
+            <a class='nav-link hover:text-green-600' href="#events">
               <div class='nav-link-border border-green-400'>Events</div>
             </a>
-            <a class='nav-link' href="#hotels">
+            <a class='nav-link hover:text-blue-600' href="#hotels">
               <div class='nav-link-border border-blue-400'>Hotels</div>
             </a>
-            <a class='nav-link' href="#rsvp">
+            <a class='nav-link hover:text-purple-600' href="#rsvp">
               <div class='nav-link-border border-purple-400'>RSVP</div>
             </a>
-            <a class='nav-link' href="#gifts">
+            <a class='nav-link hover:text-pink-600' href="#gifts">
               <div class='nav-link-border border-pink-400'>Gifts</div>
             </a>
-            <a class='nav-link mb-4 md:mb-0' href="#faq">
+            <a class='nav-link hover:text-yellow-600 mb-4 md:mb-0' href="#faq">
               <div class='nav-link-border border-yellow-400'>FAQ</div>
             </a>
           </div>
         </nav>
       </div>
     </header>
-    <section class='mt-40 md:mt-48'>
+    <section class='mt-40 md:mt-44'>
+      <p class='text-center text-4xl font-cursive pt-4 md:pt-0 pb-8'>Sunday, August 14th, 2022</p>
       <article class='article'>
         <div id="about"></div>
         <div class='flex flex-col md:flex-row items-center justify-center'>
@@ -47,7 +48,7 @@
             <img class='w-full h-auto' src="./src/images/ceremony1.png"
               alt="Lauren & Ben getting married at Barnegat Light, NJ." />
           </div>
-          <div class='flex flex-col pt-2 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5'>
+          <div class='flex flex-col pt-4 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5'>
             <p class='text-lg italic'><span class='font-cursive text-2xl'>On July 7th, 2021,</span> Ben
               Centra and Lauren DiCristofaro were wed in Barnegat Light, NJ. Due to the uncertainty of
               the pandemic, we held a small but lovely ceremony for our immediate family. As we look forward to a
@@ -71,10 +72,11 @@
             <ul>
               <li class='font-bold'>Some Hotel Conference Room</li>
               <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
-              <li>Saturday August 13th, 2022</li>
+              <li>Saturday, August 13th, 2022</li>
               <li>5:00pm to 8:00pm</li>
             </ul>
-            <p class='m-4 italic'>Come enjoy some light refreshments and say "hello" in a more relaxed environment.</p>
+            <p class='m-4 italic'>For folks arriving early, come enjoy some light refreshments and say "hello" in a more
+              relaxed environment.</p>
           </div>
           <div class="md:w-1/4">
             <img src="./src/images/placeholder.jpg" />
@@ -89,11 +91,12 @@
             <ul>
               <li class='font-bold'>Lord Hobo Brewing Company</li>
               <li><a class='link' href="https://goo.gl/maps/icR4E9EKCHsW5U9e8">5 Draper St, Woburn, MA 01801</a></li>
-              <li>Sunday August 14th, 2022</li>
+              <li>Sunday, August 14th, 2022</li>
               <li>4:00pm to 8:00pm</li>
             </ul>
             <p class='m-4 italic'>Join us in celebrating our wedding the proper way with craft beer, delicious food,
-              dancing, games, and more.</p>
+              dancing, games, and more. Brewery tours and limited guided beer tastings will also be available. Buses
+              will provide transportation to Lord Hobo from the hotels and back again at the end of the evening</p>
           </div>
         </div>
         <div class='flex flex-col-reverse md:flex-row items-center justify-center mt-8'>
@@ -102,7 +105,7 @@
             <ul>
               <li class='font-bold'>Some Bar Downtown</li>
               <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
-              <li>Sunday August 14th, 2022</li>
+              <li>Sunday, August 14th, 2022</li>
               <li>9:00pm to Midnight</li>
             </ul>
             <p class='m-4 italic'>Not done partying? We've reserved a room at some cool bar to keep the celebration
@@ -118,15 +121,17 @@
         <h2 class='article-heading'>
           <div class='article-heading-border border-blue-400'>Hotels</div>
         </h2>
-        <p class='text-center'>We have reserved blocks at two hotels, one closer to the celebration venue and one downtown closer to the airport. For the wedding celebration on Sunday, buses will provide transportation to Lord Hobo and back again.</p>
+        <p class='text-center'>We have reserved blocks at two hotels, one closer to the celebration venue and one
+          downtown closer to the airport. For the wedding celebration on Sunday, buses will provide transportation to
+          Lord Hobo and back again.</p>
         <div class='flex flex-col md:flex-row items-center justify-center mt-8'>
-          <div class='flex flex-col text-center mb-8 md:mb-0 md:mr-4'>
+          <div class='flex flex-col text-center md:mr-4  mb-4 md:mb-0'>
             <div class='w-2/3 m-auto mb-4'><img src="./src/images/placeholder.jpg" /></div>
             <ul class='mb-4'>
               <li class='font-bold'>Hotel in Woburn</li>
               <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
             </ul>
-            <a class='button' href="#">Reserve a room</a>
+            <div class='flex justify-center'><a class='button' href="#">Reserve a room</a></div>
           </div>
           <div class='flex flex-col text-center md:ml-4'>
             <div class='w-2/3 m-auto mb-4'><img src="./src/images/placeholder.jpg" /></div>
@@ -134,7 +139,7 @@
               <li class='font-bold'>Hotel in Boston</li>
               <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
             </ul>
-            <a class='button' href="#">Reserve a room</a>
+            <div class='flex justify-center'><a class='button' href="#">Reserve a room</a></div>
           </div>
         </div>
       </article>
@@ -143,14 +148,18 @@
         <h2 class='article-heading'>
           <div class='article-heading-border border-purple-400'>RSVP</div>
         </h2>
-        <p class='text-center'>In order to tailor our celebration and best meet the needs of our guests, we ask that you complete <a class='link' href="#">this RSVP survey</a> by DATE TODO. Formal invitations will follow.</p>
+        <p class='text-center'>In order to tailor our celebration and best meet the needs of our guests, we ask that you
+          complete <a class='link' href="#">this RSVP survey</a> by DATE TODO. Formal invitations will follow.</p>
+        <div class='button-group'><a class='button bg-purple-400 hover:bg-purple-600' href="#">Fill out RSVP survey</a>
+        </div>
       </article>
       <article class='article'>
         <div id="gifts" class='article-anchor'></div>
         <h2 class='article-heading'>
           <div class='article-heading-border border-pink-400'>Gifts</div>
         </h2>
-        <p class='text-center'>We appreciate your generosity in wishing us the best in our married life! We don’t need any more things, so
+        <p class='text-center'>We appreciate your generosity in wishing us the best in our married life! We don’t need
+          any more things, so
           we have not set up a gift registry. If you insist on getting us something, you can donate to a cause we
           support or contribute to our honeymoon fund.</p>
         <div class="button-group">
@@ -174,6 +183,10 @@
         <div class='my-4'>
           <p class='font-bold'>Is there a dress code for any of the events?</p>
           <p>Nope!</p>
+        </div>
+        <div class='my-4'>
+          <p class='font-bold'>I'm gonna take lots of photos! How do I share them with you?</p>
+          <p>We'll set up an app or a hashtag or something.</p>
         </div>
         <div class='my-4'>
           <p class='font-bold'>Will there be any child care available?</p>

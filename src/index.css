@@ -10,7 +10,7 @@ html {
 
 @layer components {
   .nav-link {
-    @apply px-8 py-4;
+    @apply px-8 py-4 transition-colors;
   }
 
   .nav-link-border {
@@ -22,7 +22,7 @@ html {
   }
 
   .article {
-    @apply mx-4 md:mx-8 mb-16;
+    @apply mx-4 md:mx-8 mb-12;
   }
 
   .article-anchor {
