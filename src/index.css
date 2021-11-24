@@ -26,7 +26,7 @@ html {
   }
 
   .article-anchor {
-    @apply relative h-0 -top-40 md:-top-48;
+    @apply relative h-0 -top-20;
   }
 
   .article-heading {
