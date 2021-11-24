@@ -44,7 +44,16 @@
       <div id="about"></div>
       <div class='flex flex-col md:flex-row items-center justify-center'>
         <div class='md:w-2/5'>
-          <img src="./src/images/ceremony1.png" alt="Lauren & Ben getting married at Barnegat Light, NJ." />
+          <img id="carousel" src="./src/images/ceremony1.png" alt="Lauren & Ben getting married at Barnegat Light, NJ." />
+          <div class='flex mt-2 justify-center items-center'>
+            <div id="prev" class='carousel-btn'>
+              <img width="12" src='./src/images/left-caret.png' />
+            </div>
+            <div id="dots" class='flex items-center'></div>
+            <div id="next" class='carousel-btn'>
+              <img width="12" src='./src/images/right-caret.png' />
+            </div>
+          </div>
         </div>
         <div class='flex flex-col pt-4 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5'>
           <p class='text-lg italic'><span class='font-cursive text-2xl'>On July 7th, 2021,</span> Ben
@@ -211,8 +220,11 @@
       </div>
     </article>
   </section>
-  <footer>
-    <p class='text-center my-4 text-gray-600 text-sm'>© 2022 Ben Centra. All Rights Reserved.</p>
+  <footer class='text-center my-4'>
+    <p class='text-sm text-gray-600 mb-2'>© 2022 Ben Centra. All Rights Reserved.</p>
+    <p class='text-xs text-gray-400'>Left Caret by David Swanson from the Noun Project</p>
+    <p class='text-xs text-gray-400'>Right Caret by David Swanson from the Noun Project</p>
+    <p class='text-xs text-gray-400'>menu by Three Six Five from the Noun Project</p>
   </footer>
 </body>
 
