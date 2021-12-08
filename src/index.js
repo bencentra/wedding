@@ -1,6 +1,10 @@
 import "./index.css"
-import img1 from "./images/ceremony1.png"
-import img2 from "./images/placeholder.jpg"
+import wedding2 from "./images/wedding2.jpg"
+import wedding3 from "./images/wedding3.jpg"
+import wedding6 from "./images/wedding6.jpg"
+import wedding8 from "./images/wedding8.jpg"
+import wedding9 from "./images/wedding9.jpg"
+import wedding7 from "./images/wedding7.jpg"
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -25,11 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
   */
 
   const images = [{
-    img: img1,
+    img: wedding3,
     alt: 'Lauren & Ben getting married at Barnegat Light, NJ.'
   }, {
-    img: img2,
-    alt: 'TEST'
+    img: wedding2,
+    alt: 'Lauren & Ben on the beach.'
+  }, {
+    img: wedding9,
+    alt: 'Lauren & Ben at sunset.'
+  }, {
+    img: wedding6,
+    alt: 'The cake!'
+  }, {
+    img: wedding8,
+    alt: 'The small party at the beach house.'
+  }, {
+    img: wedding7,
+    alt: 'Lauren & Ben being silly.'
   }]
 
   const image = document.querySelector('#carousel')

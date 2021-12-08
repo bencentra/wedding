@@ -50,10 +50,14 @@ html {
   }
 
   .dot {
-    @apply w-1 h-1 bg-gray-400 rounded-full m-4;
+    @apply w-1 h-1 bg-gray-400 rounded-full m-3 md:m-4;
   }
 
   .dot-selected {
     @apply w-2 h-2;
+  }
+
+  #carousel {
+    @apply max-w-xs lg:max-w-sm;
   }
 }
