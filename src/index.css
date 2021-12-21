@@ -30,7 +30,7 @@ html {
   }
 
   .article-heading {
-    @apply font-cursive text-4xl font-bold text-center my-4;
+    @apply font-cursive text-4xl font-bold text-center mt-8 mb-4;
   }
 
   .article-heading-border {
