@@ -23,7 +23,7 @@
     </h1>
     <p class='text-center text-xl py-8'>Sunday, August 14th, 2022 ᐧ Woburn, MA</p>
   </header>
-  <nav class='sticky top-0 left-0 right-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm shadow-lg'>
+  <nav class='sticky z-10 top-0 left-0 right-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm shadow-lg'>
     <div class='flex flex-col justify-center'>
       <button id="links-toggle" class='flex justify-center p-4 md:hidden' type='button'>
         <img src="src/images/icons8-menu.svg" />
@@ -48,6 +48,12 @@
     </div>
   </nav>
   <section class='mt-8 container mx-auto'>
+    <article class='article text-center'>
+      <div class='button-group text-2xl'>
+        <a class='button bg-purple-400 hover:bg-purple-600 animate-wiggle shadow-md hover:shadow-lg transition-shadow' target="_blank"
+          href="https://forms.gle/B9esEiRK9rgZA1TYA">RSVP now!</a>
+      </div>
+    </article>
     <article class='article'>
       <div id="about"></div>
       <div class='flex flex-col md:flex-row items-center justify-center'>
@@ -94,7 +100,8 @@
             alt='Exterior of Lord Hobo in Woburn' /></div>
         <ul>
           <li class='font-bold'>Lord Hobo Brewing Company</li>
-          <li><a class='link' href="https://goo.gl/maps/icR4E9EKCHsW5U9e8">5 Draper St, Woburn, MA 01801</a></li>
+          <li><a class='link' href="https://goo.gl/maps/icR4E9EKCHsW5U9e8" target="_blank">5 Draper St, Woburn, MA
+              01801</a></li>
         </ul>
         <p class='m-4 italic'>Join us in celebrating our wedding the proper way with craft beer, delicious food,
           dancing, games, and more. Brewery tours and limited guided beer tastings will also be available. Buses
@@ -171,11 +178,13 @@
         <div class='article-heading-border border-purple-400'>RSVP</div>
       </h2>
       <p class='text-center'>In order to tailor our celebration and best meet the needs of our guests, we ask that you
-        complete <a class='link' href="https://forms.gle/B9esEiRK9rgZA1TYA">this RSVP survey</a> at your earliest
+        complete <a class='link' href="https://forms.gle/B9esEiRK9rgZA1TYA" target="_blank">this RSVP survey</a> at your
+        earliest
         convenience. Formal invitations will
         follow.</p>
       <div class='button-group'>
-        <a class='button bg-purple-400 hover:bg-purple-600' href="https://forms.gle/B9esEiRK9rgZA1TYA">Fill out RSVP
+        <a class='button bg-purple-400 hover:bg-purple-600' target="_blank"
+          href="https://forms.gle/B9esEiRK9rgZA1TYA">Fill out RSVP
           survey</a>
       </div>
     </article>
@@ -184,7 +193,7 @@
       <h2 class='article-heading'>
         <div class='article-heading-border border-pink-400'>Gifts</div>
       </h2>
-      <p class='text-center'>We appreciate your generosity in wishing us the best in our married life! We don’t need
+      <p class='text-center'>We appreciate your generosity in wishing us the best in our married life! We don't need
         any more things, so we have not set up a gift registry.</p>
       <p class='text-center'>If you insist on getting us something, you can donate to
         a cause we support or contribute to our honeymoon fund.</p>
@@ -193,28 +202,30 @@
       </h3>
       <div class='flex flex-col md:flex-row text-center'>
         <div class='flex-1 flex flex-col justify-between mb-8 md:mb-0'>
-          <p>Lauren supports <a class='link' href='https://www.pih.org/'>Partners In Health</a>, a
+          <p>Lauren supports <a class='link' href='https://www.pih.org/' target="_blank">Partners In Health</a>, a
             global health and social justice organization that aims to provide high-quality health care globally to
             those who need it most.</p>
           <div class='button-group'>
-            <a class='button bg-pink-400 hover:bg-pink-600' href="https://www.pih.org/?form=donate&ms=web">Donate to
+            <a class='button bg-pink-400 hover:bg-pink-600' href="https://www.pih.org/?form=donate&ms=web"
+              target="_blank">Donate to
               Partners
               In Health</a>
           </div>
         </div>
         <div class='flex-1 flex flex-col justify-between mx-0 mb-8 md:mx-4 md:mb-0'>
-          <p>Ben supports the <a class='link' href='https://www.sunrisemovement.org/'>Sunrise Movement</a>, an
+          <p>Ben supports the <a class='link' href='https://www.sunrisemovement.org/' target="_blank">Sunrise
+              Movement</a>, an
             organization seeking to stop climate change and create millions of good jobs in the process.</p>
           <div class='button-group'><a class='button bg-pink-400 hover:bg-pink-600'
-              href="https://www.sunrisemovement.org/donate/">Donate to the Sunrise Movement</a></div>
+              href="https://www.sunrisemovement.org/donate/" target="_blank">Donate to the Sunrise Movement</a></div>
         </div>
         <div class='flex-1 flex flex-col justify-between'>
           <p>If you want to maximize your effectiveness of each dollar donated, the <a class='link'
-              href="https://www.givewell.org/maximum-impact-fund">GiveWell Maximum Impact Fund</a> is for you. Top
-            charities
-            support malaria prevention, childhood vaccinations, and more.</p>
-          <div class='button-group'><a class='button bg-pink-400 hover:bg-pink-600'
-              href="https://secure.givewell.org/">Donate to the
+              href="https://www.givewell.org/maximum-impact-fund" target="_blank">GiveWell Maximum Impact Fund</a> is
+            for you. Top
+            charities support malaria prevention, childhood vaccinations, and more.</p>
+          <div class='button-group'><a class='button bg-pink-400 hover:bg-pink-600' href="https://secure.givewell.org/"
+              target="_blank">Donate to the
               GiveWell Maximum Impact Fund</a></div>
         </div>
       </div>
@@ -225,8 +236,8 @@
         But we have some travel dreams, like going to New Zealand for the first time or back to Hawaii. No matter where
         or when, thank you for helping us make new lifelong memories!</p>
       <div class="button-group">
-        <a class='button bg-pink-400 hover:bg-pink-600' href="https://paypal.me/bencentra">Contribute to our honeymoon
-          fund</a>
+        <a class='button bg-pink-400 hover:bg-pink-600' href="https://paypal.me/bencentra" target="_blank">Contribute to
+          our honeymoon fund</a>
       </div>
     </article>
     <article class='article'>
@@ -239,7 +250,7 @@
         <p>We are requiring that all guests who are able to have received a COVID-19 vaccine. In addition, we would
           prefer that guests are also up to date on their booster shots. Finally, please comply with the masking rules
           of any of our venues. For more information, visit the <a class='link'
-            href="https://www.mass.gov/covid-19-updates-and-information">Massachusetts COVID-19
+            href="https://www.mass.gov/covid-19-updates-and-information" target="_blank">Massachusetts COVID-19
             website</a>.</p>
       </div>
       <div class='my-4'>
@@ -250,7 +261,7 @@
         <p class='font-bold'>I don't actually like beer. Will there be other drinks?</p>
         <p>Of course! Lord Hobo also serves wine and has a guest cider on tap. There will be no spirits or cocktails at
           Lord Hobo. To get an idea for what will be on tap, check out <a class='link'
-            href="https://lordhobo.com/woburn/">the taproom website.</a></p>
+            href="https://lordhobo.com/woburn/" target="_blank">the taproom website.</a></p>
       </div>
       <div class='my-4'>
         <p class='font-bold'>I'm gonna take lots of photos! How do I share them with you?</p>
@@ -263,14 +274,15 @@
       <div class='my-4'>
         <p class='font-bold'>Can I pet your dog?</p>
         <p>Unfortunately, Dusty will be boarded the whole weekend. You can always look at <a class='link'
-            href="https://photos.app.goo.gl/qWza3ddtB6vHTKHs7">like a million photos of him</a> on Google Photos or <a
-            class='link' href="https://www.instagram.com/dustobustogram/">follow him on Instagram</a>.
+            href="https://photos.app.goo.gl/qWza3ddtB6vHTKHs7" target="_blank">like a million photos of him</a> on
+          Google Photos or <a class='link' href="https://www.instagram.com/dustobustogram/" target="_blank">follow him
+            on Instagram</a>.
         </p>
       </div>
       <div class='my-4'>
         <p class='font-bold'>I'm hopelessly lost and don't know what to do!</p>
-        <p>If you have questions, feel free to email Ben at <a class='link'
-            href="mailto:blcentra@gmail.com">blcentra@gmail.com</a> or text him at&nbsp;<tel>(845) 826-5456</tel>.</p>
+        <p>If you have questions, feel free to email Ben at <a class='link' href="mailto:blcentra@gmail.com"
+            target="_blank">blcentra@gmail.com</a> or text him at&nbsp;<tel>(845) 826-5456</tel>.</p>
       </div>
     </article>
   </section>
