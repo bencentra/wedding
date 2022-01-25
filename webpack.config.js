@@ -59,7 +59,8 @@ module.exports = () => {
   if (isProduction) {
     config.mode = "production";
 
-    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
+    // TODO - Learn about service workers
+    // config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
   } else {
     config.mode = "development";
   }

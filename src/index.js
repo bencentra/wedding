@@ -80,12 +80,66 @@ document.addEventListener('DOMContentLoaded', () => {
     setImage()
   }
 
-  prev.addEventListener('click', () => {
+  function prevImage() {
     cursor = cursor === 0 ? images.length - 1 : cursor - 1
     setImage()
-  })
+  }
+
+  prev.addEventListener('click', prevImage)
 
   next.addEventListener('click', nextImage)
 
   setImage()
+
+  /*
+  * Swipe for the carousel
+  */
+ 
+  let xDown = null;
+  let yDown = null;
+
+  function getTouches(evt) {
+    return evt.touches ||             // browser API
+      evt.originalEvent.touches; // jQuery
+  }
+
+  function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+  };
+
+  function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
+
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+      if (xDiff > 0) {
+        /* right swipe */
+        nextImage()
+      } else {
+        /* left swipe */
+        prevImage()
+      }
+    } else {
+      if (yDiff > 0) {
+        /* down swipe */
+      } else {
+        /* up swipe */
+      }
+    }
+    /* reset values */
+    xDown = null;
+    yDown = null;
+  };
+
+  image.addEventListener('touchstart', handleTouchStart, false);
+  image.addEventListener('touchmove', handleTouchMove, false);
 })

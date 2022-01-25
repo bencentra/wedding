@@ -53,8 +53,8 @@
   <section class='mt-8 container mx-auto'>
     <article class='article text-center'>
       <div class='button-group text-2xl'>
-        <a class='button bg-purple-400 hover:bg-purple-600 animate-wiggle shadow-md hover:shadow-lg transition-shadow'
-          target="_blank" href="https://forms.gle/B9esEiRK9rgZA1TYA">RSVP now!</a>
+        <a class='button bg-purple-400 hover:bg-purple-600 shadow-md hover:shadow-lg animate-wiggle' target="_blank"
+          href="https://forms.gle/B9esEiRK9rgZA1TYA">RSVP now!</a>
       </div>
     </article>
     <article class='article'>
@@ -159,8 +159,8 @@
       <div class='flex flex-col lg:flex-row'>
         <div class='flex flex-col md:flex-row items-center justify-center mt-8 w-full lg:w-2/3'>
           <div class='flex flex-col text-center'>
-            <div class='lg:mx-8'><img src="./src/images/hiltonwoburn.jpg"
-                alt="The Hilton Boston/Woburn in Woburn, MA" /></div>
+            <div class='lg:mx-8'><img src="./src/images/hiltonwoburn.jpg" alt="The Hilton Boston/Woburn in Woburn, MA"
+                class='shadow-md' /></div>
           </div>
         </div>
         <div class='flex-1 flex flex-col justify-center mt-4 lg:mt-0 text-center'>
@@ -312,14 +312,19 @@
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker
-        .register("service-worker.js")
-        .then((registration) => {
-          console.log("Service Worker registered: ", registration);
-        })
-        .catch((registrationError) => {
-          console.error("Service Worker registration failed: ", registrationError);
-        });
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister()
+        }
+      })
+      // navigator.serviceWorker
+      //   .register("service-worker.js")
+      //   .then((registration) => {
+      //     console.log("Service Worker registered: ", registration);
+      //   })
+      //   .catch((registrationError) => {
+      //     console.error("Service Worker registration failed: ", registrationError);
+      //   });
     });
   }
 </script>
