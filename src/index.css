@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;600&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -18,7 +18,7 @@ html {
   }
 
   .link {
-    @apply text-blue-600 hover:text-blue-800 transition-colors;
+    @apply text-blue-600 hover:text-blue-800 transition-colors cursor-pointer;
   }
 
   .article {
@@ -46,7 +46,7 @@ html {
   }
 
   .carousel-btn {
-    @apply p-4 md:p-2 mx-4 cursor-pointer rounded-full opacity-50 bg-white bg-opacity-0 hover:bg-opacity-100 transition-all
+    @apply p-4 md:p-2 mx-4 cursor-pointer rounded-full opacity-50 bg-white bg-opacity-0 hover:bg-opacity-100 transition-all;
   }
 
   .dot {

@@ -1,332 +1,641 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="src/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="src/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Lauren & Ben's Wedding Celebration</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="src/images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="src/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>Lauren & Ben's Wedding Celebration</title>
-</head>
-
-<body class='bg-gradient-to-br from-blue-200 to-pink-100'>
-  <header class="pt-8">
-    <h1 class='font-cursive text-center'>
-      <div class="text-6xl font-bold">Lauren & Ben's</div>
-      <div class='text-4xl mt-2'>Wedding Celebration</div>
-    </h1>
-    <p class='text-center text-xl py-8'>Sunday, August 14th, 2022 ᐧ Woburn, MA</p>
-  </header>
-  <nav class='sticky z-10 top-0 left-0 right-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm shadow-lg'>
-    <div class='flex flex-col justify-center'>
-      <button id="links-toggle" class='flex justify-center p-4 md:hidden' type='button'>
-        <img src="src/images/icons8-menu.svg" />
-      </button>
-      <div id="links" class='h-0 md:h-auto flex flex-col md:flex-row md:justify-center text-center overflow-hidden'>
-        <a class='nav-link hover:text-green-600' href="#events">
-          <div class='nav-link-border border-green-400'>Events</div>
-        </a>
-        <a class='nav-link hover:text-blue-600' href="#hotel">
-          <div class='nav-link-border border-blue-400'>Hotel</div>
-        </a>
-        <a class='nav-link hover:text-purple-600' href="#rsvp">
-          <div class='nav-link-border border-purple-400'>RSVP</div>
-        </a>
-        <a class='nav-link hover:text-pink-600' href="#gifts">
-          <div class='nav-link-border border-pink-400'>Gifts</div>
-        </a>
-        <a class='nav-link hover:text-yellow-600 mb-4 md:mb-0' href="#faq">
-          <div class='nav-link-border border-yellow-400'>FAQ</div>
-        </a>
+  <body class="bg-gradient-to-br from-blue-200 to-pink-100">
+    <header class="pt-8">
+      <h1 class="font-cursive text-center">
+        <div class="text-6xl font-bold">Lauren & Ben's</div>
+        <div class="text-4xl mt-2">Wedding Celebration</div>
+      </h1>
+      <p class="text-center text-xl py-8">
+        Sunday, August 14th, 2022 ᐧ Woburn, MA
+      </p>
+    </header>
+    <nav
+      class="
+        sticky
+        z-10
+        top-0
+        left-0
+        right-0
+        bg-white bg-opacity-50
+        backdrop-filter backdrop-blur-sm
+        shadow-lg
+      "
+    >
+      <div class="flex flex-col justify-center">
+        <button
+          id="links-toggle"
+          class="flex justify-center p-4 md:hidden"
+          type="button"
+        >
+          <img src="src/images/icons8-menu.svg" />
+        </button>
+        <div
+          id="links"
+          class="
+            h-0
+            md:h-auto
+            flex flex-col
+            md:flex-row md:justify-center
+            text-center
+            overflow-hidden
+          "
+        >
+          <a class="nav-link hover:text-green-600" href="#events">
+            <div class="nav-link-border border-green-400">Events</div>
+          </a>
+          <a class="nav-link hover:text-blue-600" href="#hotel">
+            <div class="nav-link-border border-blue-400">Hotel</div>
+          </a>
+          <a class="nav-link hover:text-purple-600" href="#rsvp">
+            <div class="nav-link-border border-purple-400">RSVP</div>
+          </a>
+          <a class="nav-link hover:text-pink-600" href="#gifts">
+            <div class="nav-link-border border-pink-400">Gifts</div>
+          </a>
+          <a class="nav-link hover:text-yellow-600 mb-4 md:mb-0" href="#faq">
+            <div class="nav-link-border border-yellow-400">FAQ</div>
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <section class='mt-8 container mx-auto'>
-    <article class='article text-center'>
-      <div class='button-group text-2xl'>
-        <a class='button bg-purple-400 hover:bg-purple-600 shadow-md hover:shadow-lg animate-wiggle' target="_blank"
-          href="https://forms.gle/B9esEiRK9rgZA1TYA">RSVP now!</a>
-      </div>
-    </article>
-    <article class='article'>
-      <div id="about"></div>
-      <div class='flex flex-col md:flex-row items-center justify-center'>
-        <div class='md:w-2/5'>
-          <div class='flex justify-center items-center'>
-            <img id="carousel" src="./src/images/ceremony1.png"
-              alt="Lauren & Ben getting married at Barnegat Light, NJ." class='shadow-md' />
-          </div>
-          <div class='flex mt-2 justify-center items-center'>
-            <div id="prev" class='carousel-btn'>
-              <img width="12" src='./src/images/left-caret.png' />
+    </nav>
+    <section class="mt-8 container mx-auto">
+      <article class="article text-center">
+        <div class="button-group text-2xl">
+          <a
+            class="
+              button
+              bg-purple-400
+              hover:bg-purple-600
+              shadow-md
+              hover:shadow-lg
+              animate-wiggle
+            "
+            target="_blank"
+            href="https://forms.gle/B9esEiRK9rgZA1TYA"
+            >RSVP now!</a
+          >
+        </div>
+      </article>
+      <article class="article">
+        <div id="about"></div>
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <div class="md:w-2/5">
+            <div class="flex justify-center items-center">
+              <img
+                id="carousel"
+                src="./src/images/ceremony1.png"
+                alt="Lauren & Ben getting married at Barnegat Light, NJ."
+                class="shadow-md"
+              />
             </div>
-            <div id="dots" class='flex items-center'></div>
-            <div id="next" class='carousel-btn'>
-              <img width="12" src='./src/images/right-caret.png' />
+            <div class="flex mt-2 justify-center items-center">
+              <div id="prev" class="carousel-btn">
+                <img width="12" src="./src/images/left-caret.png" />
+              </div>
+              <div id="dots" class="flex items-center"></div>
+              <div id="next" class="carousel-btn">
+                <img width="12" src="./src/images/right-caret.png" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col pt-4 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5">
+            <p class="text-lg italic text-justify">
+              <span class="font-cursive text-2xl">On July 7th, 2021,</span> Ben
+              Centra and Lauren DiCristofaro were wed in Barnegat Light, NJ. Due
+              to the uncertainty of the pandemic, we held a small but lovely
+              ceremony for our immediate family. As we look forward to a “new
+              normal,” we happily invite our friends and extended family to come
+              to Boston and celebrate with us!
+            </p>
+            <div class="button-group">
+              <a
+                class="button"
+                href="https://photos.app.goo.gl/X4WjZFYwuZfPvo7n7"
+                target="_blank"
+                >Watch the ceremony</a
+              >
+              <a
+                class="button"
+                href="https://photos.app.goo.gl/QUt36LGwuw92pd2p6"
+                target="_blank"
+                >View wedding photos</a
+              >
             </div>
           </div>
         </div>
-        <div class='flex flex-col pt-4 md:pt-0 px-4 md:pr-0 md:pl-8 md:w-3/5'>
-          <p class='text-lg italic text-justify'><span class='font-cursive text-2xl'>On July 7th, 2021,</span> Ben
-            Centra and Lauren DiCristofaro were wed in Barnegat Light, NJ. Due to the uncertainty of
-            the pandemic, we held a small but lovely ceremony for our immediate family. As we look forward to a
-            “new normal,” we happily invite our friends and extended family to come to Boston and celebrate with us!
+      </article>
+      <article class="article">
+        <div id="events" class="article-anchor"></div>
+        <h2 class="article-heading">
+          <div class="article-heading-border border-green-400">Events</div>
+        </h2>
+        <div class="flex flex-col items-center justify-center text-center">
+          <h3 class="article-heading text-2xl">
+            <div class="article-heading-border border-b-2">
+              Wedding Celebration
+            </div>
+          </h3>
+          <div class="text-xl">Sunday, August 14th, 2022</div>
+          <div class="text-lg">2:00pm to 6:00pm</div>
+          <div class="md:w-2/3 my-4">
+            <img
+              src="./src/images/lordhobo.jpg"
+              class="shadow-md"
+              alt="Exterior of Lord Hobo in Woburn"
+            />
+          </div>
+          <ul>
+            <li class="font-bold">Lord Hobo Brewing Company</li>
+            <li>
+              <a
+                class="link"
+                href="https://goo.gl/maps/icR4E9EKCHsW5U9e8"
+                target="_blank"
+                >5 Draper St, Woburn, MA 01801</a
+              >
+            </li>
+          </ul>
+          <p class="m-4">
+            Join us in celebrating our wedding the proper way with craft beer,
+            delicious food, dancing, games, and more! Brewery tours will also be
+            available.
           </p>
-          <div class="button-group">
-            <a class='button' href="https://photos.app.goo.gl/X4WjZFYwuZfPvo7n7" target="_blank">Watch the ceremony</a>
-            <a class='button' href="https://photos.app.goo.gl/QUt36LGwuw92pd2p6" target="_blank">View wedding photos</a>
-          </div>
+          <p>
+            Buses will provide transportation to Lord Hobo and back again. There
+            is also free parking in their lot and on the street.
+          </p>
         </div>
-      </div>
-    </article>
-    <article class='article'>
-      <div id="events" class='article-anchor'></div>
-      <h2 class='article-heading'>
-        <div class='article-heading-border border-green-400'>Events</div>
-      </h2>
-      <div class='flex flex-col items-center justify-center text-center mt-8'>
-        <h3 class='article-heading text-2xl'>
-          <div class='article-heading-border border-b-2'>Wedding Celebration</div>
-        </h3>
-        <div class='text-xl'>Sunday, August 14th, 2022</div>
-        <div class='text-lg'>2:00pm to 6:00pm*</div>
-        <p class='text-sm italic text-gray-600'>*Exact time TBD</p>
-        <div class='md:w-2/3 my-4'><img src="./src/images/lordhobo.jpg" class='shadow-md'
-            alt='Exterior of Lord Hobo in Woburn' /></div>
-        <ul>
-          <li class='font-bold'>Lord Hobo Brewing Company</li>
-          <li><a class='link' href="https://goo.gl/maps/icR4E9EKCHsW5U9e8" target="_blank">5 Draper St, Woburn, MA
-              01801</a></li>
+        <h3 class="text-2xl font-cursive my-4 text-center">Bus Schedule</h3>
+        <ul class="text-center">
+          <li>
+            <span class="font-semibold">1:15pm</span> - Buses depart
+            <a
+              class="link"
+              target="_blank"
+              href="https://goo.gl/maps/oHxAxk7VexLnnY8BA"
+              >Alewife Station</a
+            >
+          </li>
+          <li>
+            <span class="font-semibold">1:45pm</span> - Buses depart
+            <a class="link" href="#hotel">Hotel</a>
+          </li>
+          <li>
+            <span class="font-semibold">2:00pm</span> - Buses arrive at Lord
+            Hobo
+          </li>
+          <li>
+            <span class="font-semibold">5:00pm</span> - Early bus departs for
+            Hotel
+          </li>
+          <li>
+            <span class="font-semibold">6:15pm</span> - Buses depart Lord Hobo
+          </li>
+          <li>
+            <span class="font-semibold">6:30pm</span> - Buses arrive at Hotel
+          </li>
+          <li>
+            <span class="font-semibold">7:00pm</span> - Buses arrive at
+            Afterparty venue (TBD)
+          </li>
         </ul>
-        <p class='m-4'>Join us in celebrating our wedding the proper way with craft beer, delicious food,
-          dancing, games, and more! Brewery tours and limited guided beer tastings will also be available. Buses
-          will provide transportation to Lord Hobo from the hotel and back again at the end of the party. There is also
-          free parking in their lot and on the street.</p>
-      </div>
-      <h3 class='article-heading text-2xl'>
-        <div class='article-heading-border border-b-2'>Other Events</div>
-      </h3>
-      <p class='font-cursive text-2xl text-center py-4'>More info coming soon!</p>
-      <p class='text-center'>Our plan is to host an afterparty on Sunday evening (location TBD), as well
-        as an informal brunch on Monday (8/15). Check back soon for more details!</p>
-      <!-- <div class='flex flex-col-reverse md:flex-row items-center justify-center mt-8'>
-        <div class='pt-2 md:pt-0 md:w-3/4 text-center'>
-          <h3 class='text-2xl font-cursive mb-4'>Hospitality Dinner</h3>
-          <ul>
-            <li class='font-bold'>Some Hotel Conference Room</li>
-            <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
-            <li>Saturday, August 13th, 2022</li>
-            <li>5:00pm to 8:00pm</li>
-          </ul>
-          <p class='m-4 italic'>For folks arriving early, come enjoy some light refreshments and say "hello" in a more
-            relaxed environment.</p>
-        </div>
-        <div class="md:w-1/4">
-          <img src="./src/images/placeholder.jpg" />
-        </div>
-      </div>
-      <div class='flex flex-col md:flex-row items-center justify-center mt-8'>
-        <div class="md:w-1/4">
-          <img src="./src/images/placeholder.jpg" />
-        </div>
-        <div class='pt-2 md:pt-0 md:w-3/4 text-center'>
-          <h3 class='text-2xl font-cursive mb-4'>Afterparty</h3>
-          <ul>
-            <li class='font-bold'>Some Bar Downtown</li>
-            <li><a class='link' href="#">1122 Boogie Woogie Ave, Boston, MA, 02155</a></li>
-            <li>Sunday, August 14th, 2022</li>
-            <li>9:00pm to Midnight</li>
-          </ul>
-          <p class='m-4 italic'>Not done partying? We've reserved a room at some cool bar to keep the celebration
-            going.</p>
-        </div>
-      </div> -->
-    </article>
-    <article class='article'>
-      <div id="hotel" class='article-anchor'></div>
-      <h2 class='article-heading'>
-        <div class='article-heading-border border-blue-400'>Hotel</div>
-      </h2>
-      <div class='flex flex-col lg:flex-row'>
-        <div class='flex flex-col md:flex-row items-center justify-center mt-8 w-full lg:w-2/3'>
-          <div class='flex flex-col text-center'>
-            <div class='lg:mx-8'><img src="./src/images/hiltonwoburn.jpg" alt="The Hilton Boston/Woburn in Woburn, MA"
-                class='shadow-md' /></div>
+        <h3 class="article-heading text-2xl">
+          <div class="article-heading-border border-b-2">Other Events</div>
+        </h3>
+        <div class="flex flex-col md:flex-row items-center justify-center mt-8">
+          <div class="md:w-1/3">
+            <img class="shadow-md" src="./src/images/placeholder2.jpg" />
+          </div>
+          <div class="pt-2 md:pt-0 md:w-2/3 text-center">
+            <h3 class="text-2xl font-cursive my-4">Afterparty</h3>
+            <ul>
+              <li class="font-bold">Location TBD</li>
+              <!-- <li>
+                  <a class="link" href="#"
+                    >1122 Boogie Woogie Ave, Boston, MA, 02155</a
+                  >
+                </li> -->
+              <li>Sunday, August 14th, 2022</li>
+              <li>7:00pm to 9:00pm</li>
+            </ul>
+            <p class="m-4">More details coming soon!</p>
+            <!-- <p class="m-4 italic">
+                Not done partying? We've reserved a room at some cool bar to
+                keep the celebration going.
+              </p> -->
           </div>
         </div>
-        <div class='flex-1 flex flex-col justify-center mt-4 lg:mt-0 text-center'>
-          <ul>
-            <li class='font-bold'>Hilton Boston/Woburn</li>
-            <li><a class='link' href="https://goo.gl/maps/5kYZHMibKQoYjVz19" target="_blank">2 Forbes Rd, Woburn, MA
-                01801</a></li>
-          </ul>
-          <p class='mt-4 lg:mb-4'>We have reserved rooms at the Hilton in Woburn, which lets you book at a
-            discounted rate! There are limited amount but we can add more, so please <a class='link'
-              href="mailto:blcentra@gmail.com" target="_blank">reach out</a> with any issues.</p>
-          <div class='button-group'><a class='button'
-              href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BOSBWHF&groupCode=DCW13&arrivaldate=2022-08-13&departuredate=2022-08-15&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
-              target="_blank">Reserve a room</a></div>
-        </div>
-      </div>
-    </article>
-    <article class='article'>
-      <div id="rsvp" class='article-anchor'></div>
-      <h2 class='article-heading'>
-        <div class='article-heading-border border-purple-400'>RSVP</div>
-      </h2>
-      <p class='text-center'>In order to tailor our celebration and best meet the needs of our guests, we ask that you
-        complete <a class='link' href="https://forms.gle/B9esEiRK9rgZA1TYA" target="_blank">this RSVP survey</a> at your
-        earliest
-        convenience. Formal invitations will
-        follow.</p>
-      <div class='button-group'>
-        <a class='button bg-purple-400 hover:bg-purple-600' target="_blank"
-          href="https://forms.gle/B9esEiRK9rgZA1TYA">Fill out RSVP
-          survey</a>
-      </div>
-    </article>
-    <article class='article'>
-      <div id="gifts" class='article-anchor'></div>
-      <h2 class='article-heading'>
-        <div class='article-heading-border border-pink-400'>Gifts</div>
-      </h2>
-      <p class='text-center'>We appreciate your generosity in wishing us the best in our married life! We don't need
-        any more things, so we have not set up a gift registry.</p>
-      <p class='text-center'>If you insist on getting us something, you can donate to
-        a cause we support or contribute to our honeymoon fund.</p>
-      <h3 class='article-heading text-2xl'>
-        <div class='article-heading-border border-b-2'>Donations</div>
-      </h3>
-      <div class='flex flex-col md:flex-row text-center'>
-        <div class='flex-1 flex flex-col justify-between mb-8 md:mb-0'>
-          <p>Lauren supports <a class='link' href='https://www.pih.org/' target="_blank">Partners In Health</a>, a
-            global health and social justice organization that aims to provide high-quality health care globally to
-            those who need it most.</p>
-          <div class='button-group'>
-            <a class='button bg-pink-400 hover:bg-pink-600' href="https://www.pih.org/?form=donate&ms=web"
-              target="_blank">Donate to
-              Partners
-              In Health</a>
+        <div
+          class="
+            flex flex-col-reverse
+            md:flex-row
+            items-center
+            justify-center
+            mt-8
+          "
+        >
+          <div class="pt-2 md:pt-0 md:w-2/3 text-center">
+            <h3 class="text-2xl font-cursive my-4">Monday Brunch</h3>
+            <ul>
+              <li class="font-bold">Hilton Boston/Woburn - Salons A/B</li>
+              <li>
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/5kYZHMibKQoYjVz19"
+                  target="_blank"
+                  >2 Forbes Rd, Woburn, MA 01801</a
+                >
+              </li>
+              <li>Monday, August 15th, 2022</li>
+              <li>9:00am to 11:00am</li>
+            </ul>
+            <p class="m-4">
+              Before heading home, come enjoy some light refreshments and say
+              "hello" in a more relaxed environment.
+            </p>
+          </div>
+          <div class="md:w-1/3">
+            <img class="shadow-md" src="./src/images/brunch.jpg" />
           </div>
         </div>
-        <div class='flex-1 flex flex-col justify-between mx-0 mb-8 md:mx-4 md:mb-0'>
-          <p>Ben supports the <a class='link' href='https://www.sunrisemovement.org/' target="_blank">Sunrise
-              Movement</a>, an
-            organization seeking to stop climate change and create millions of good jobs in the process.</p>
-          <div class='button-group'><a class='button bg-pink-400 hover:bg-pink-600'
-              href="https://www.sunrisemovement.org/donate/" target="_blank">Donate to the Sunrise Movement</a></div>
+      </article>
+      <article class="article">
+        <div id="hotel" class="article-anchor"></div>
+        <h2 class="article-heading">
+          <div class="article-heading-border border-blue-400">Hotel</div>
+        </h2>
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              items-center
+              justify-center
+              mt-8
+              w-full
+              lg:w-2/3
+            "
+          >
+            <div class="flex flex-col text-center">
+              <div class="lg:mx-8">
+                <img
+                  src="./src/images/hiltonwoburn.jpg"
+                  alt="The Hilton Boston/Woburn in Woburn, MA"
+                  class="shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 flex flex-col justify-center mt-4 lg:mt-0 text-center"
+          >
+            <ul>
+              <li class="font-bold">Hilton Boston/Woburn</li>
+              <li>
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/5kYZHMibKQoYjVz19"
+                  target="_blank"
+                  >2 Forbes Rd, Woburn, MA 01801</a
+                >
+              </li>
+            </ul>
+            <p class="mt-4 lg:mb-4">
+              We have reserved rooms at the Hilton in Woburn, which lets you
+              book at a discounted rate! There are limited amount but we can add
+              more, so please
+              <a class="link" href="mailto:blcentra@gmail.com" target="_blank"
+                >reach out</a
+              >
+              with any issues.
+            </p>
+            <div class="button-group">
+              <a
+                class="button"
+                href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BOSBWHF&groupCode=DCW13&arrivaldate=2022-08-13&departuredate=2022-08-15&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
+                target="_blank"
+                >Reserve a room</a
+              >
+            </div>
+          </div>
         </div>
-        <div class='flex-1 flex flex-col justify-between'>
-          <p>If you want to maximize your effectiveness of each dollar donated, the <a class='link'
-              href="https://www.givewell.org/maximum-impact-fund" target="_blank">GiveWell Maximum Impact Fund</a> is
-            for you. Top
-            charities support malaria prevention, childhood vaccinations, and more.</p>
-          <div class='button-group'><a class='button bg-pink-400 hover:bg-pink-600' href="https://secure.givewell.org/"
-              target="_blank">Donate to the
-              GiveWell Maximum Impact Fund</a></div>
-        </div>
-      </div>
-      <h3 class='article-heading text-2xl'>
-        <div class='article-heading-border border-b-2'>Honeymoon Fund</div>
-      </h3>
-      <p class='text-center'>With the ever-changing COVID situation, we're not sure when we'll have a real honeymoon.
-        But we have some travel dreams, like going to New Zealand for the first time or back to Hawaii. No matter where
-        or when, thank you for helping us make new lifelong memories!</p>
-      <div class="button-group">
-        <a class='button bg-pink-400 hover:bg-pink-600' href="https://paypal.me/bencentra" target="_blank">Contribute to
-          our honeymoon fund</a>
-      </div>
-    </article>
-    <article class='article'>
-      <div id="faq" class='article-anchor'></div>
-      <h2 class='article-heading'>
-        <div class='article-heading-border border-yellow-400'>FAQ</div>
-      </h2>
-      <div class='my-4'>
-        <p class='font-bold'>Is there a COVID-19 vaccine requirement?</p>
-        <p>We are requiring that all guests who are able to have received a COVID-19 vaccine. In addition, we would
-          prefer that guests are also up to date on their booster shots. Finally, please comply with the masking rules
-          of any of our venues. For more information, visit the <a class='link'
-            href="https://www.mass.gov/covid-19-updates-and-information" target="_blank">Massachusetts COVID-19
-            website</a>.</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>Who else can I bring with me?</p>
-        <p>Significant others are welcome! Please include them when you fill out the RSVP form so we can add them to
-          your formal invite. Children are also welcome, though unfortunately they won't be able to enjoy any beer.</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>Is there a dress code for any of the events?</p>
-        <p>Nope! Please do wear clothes though.</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>I don't actually like beer. Will there be other drinks?</p>
-        <p>Of course! Lord Hobo also serves wine and has a guest cider on tap. There will be no spirits or cocktails at
-          Lord Hobo. To get an idea for what will be on tap, check out <a class='link'
-            href="https://lordhobo.com/woburn/" target="_blank">the taproom website.</a></p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>I'm gonna take lots of photos! How do I share them with you?</p>
-        <p>We'll set up an app or a hashtag or something. More info coming soon!</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>Will there be transportation for folks not staying at the hotel?</p>
-        <p>We're looking into having the bus also do a pick-up/drop-off somewhere near the T (Boston's public
-          transportation). More info coming soon!</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>Will there be any child care available?</p>
-        <p>Maybe? Still figuring that part out. More info coming soon!</p>
-      </div>
-      <div class='my-4'>
-        <p class='font-bold'>Can I pet your dog?</p>
-        <p>Unfortunately, Dusty will be boarded the whole weekend. You can always look at <a class='link'
-            href="https://photos.app.goo.gl/qWza3ddtB6vHTKHs7" target="_blank">like a million photos of him</a> on
-          Google Photos or <a class='link' href="https://www.instagram.com/dustobustogram/" target="_blank">follow him
-            on Instagram</a>.
+      </article>
+      <article class="article">
+        <div id="rsvp" class="article-anchor"></div>
+        <h2 class="article-heading">
+          <div class="article-heading-border border-purple-400">RSVP</div>
+        </h2>
+        <p class="text-center">
+          In order to tailor our celebration and best meet the needs of our
+          guests, we ask that you complete
+          <a
+            class="link"
+            href="https://forms.gle/B9esEiRK9rgZA1TYA"
+            target="_blank"
+            >this RSVP survey</a
+          >
+          by <span class="italic">August 1st, 2022</span>.
         </p>
+        <div class="button-group">
+          <a
+            class="button bg-purple-400 hover:bg-purple-600"
+            target="_blank"
+            href="https://forms.gle/B9esEiRK9rgZA1TYA"
+            >Fill out RSVP survey</a
+          >
+        </div>
+      </article>
+      <article class="article">
+        <div id="gifts" class="article-anchor"></div>
+        <h2 class="article-heading">
+          <div class="article-heading-border border-pink-400">Gifts</div>
+        </h2>
+        <p class="text-center">
+          We appreciate your generosity in wishing us the best in our married
+          life! We don't need any more things, so we have not set up a gift
+          registry.
+        </p>
+        <p class="text-center">
+          If you insist on getting us something, you can donate to a cause we
+          support or contribute to our honeymoon fund.
+        </p>
+        <h3 class="article-heading text-2xl">
+          <div class="article-heading-border border-b-2">Donations</div>
+        </h3>
+        <div class="flex flex-col md:flex-row text-center">
+          <div class="flex-1 flex flex-col justify-between mb-8 md:mb-0">
+            <p>
+              Lauren supports
+              <a class="link" href="https://www.pih.org/" target="_blank"
+                >Partners In Health</a
+              >, a global health and social justice organization that aims to
+              provide high-quality health care globally to those who need it
+              most.
+            </p>
+            <div class="button-group">
+              <a
+                class="button bg-pink-400 hover:bg-pink-600"
+                href="https://www.pih.org/?form=donate&ms=web"
+                target="_blank"
+                >Donate to Partners In Health</a
+              >
+            </div>
+          </div>
+          <div
+            class="
+              flex-1 flex flex-col
+              justify-between
+              mx-0
+              mb-8
+              md:mx-4 md:mb-0
+            "
+          >
+            <p>
+              Ben supports the
+              <a
+                class="link"
+                href="https://www.sunrisemovement.org/"
+                target="_blank"
+                >Sunrise Movement</a
+              >, an organization seeking to stop climate change and create
+              millions of good jobs in the process.
+            </p>
+            <div class="button-group">
+              <a
+                class="button bg-pink-400 hover:bg-pink-600"
+                href="https://www.sunrisemovement.org/donate/"
+                target="_blank"
+                >Donate to the Sunrise Movement</a
+              >
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col justify-between">
+            <p>
+              If you want to maximize your effectiveness of each dollar donated,
+              the
+              <a
+                class="link"
+                href="https://www.givewell.org/maximum-impact-fund"
+                target="_blank"
+                >GiveWell Maximum Impact Fund</a
+              >
+              is for you. Top charities support malaria prevention, childhood
+              vaccinations, and more.
+            </p>
+            <div class="button-group">
+              <a
+                class="button bg-pink-400 hover:bg-pink-600"
+                href="https://secure.givewell.org/"
+                target="_blank"
+                >Donate to the GiveWell Maximum Impact Fund</a
+              >
+            </div>
+          </div>
+        </div>
+        <h3 class="article-heading text-2xl">
+          <div class="article-heading-border border-b-2">Honeymoon Fund</div>
+        </h3>
+        <p class="text-center">
+          With the ever-changing COVID situation, we're not sure when we'll have
+          a real honeymoon. But we have some travel dreams, like visiting to New
+          Zealand for the first time or going back to Hawaii. No matter where or
+          when, thank you for helping us make new lifelong memories!
+        </p>
+        <div class="button-group">
+          <a
+            class="button bg-pink-400 hover:bg-pink-600"
+            href="https://paypal.me/bencentra"
+            target="_blank"
+            >Contribute to our honeymoon fund</a
+          >
+        </div>
+      </article>
+      <article class="article">
+        <div id="faq" class="article-anchor"></div>
+        <h2 class="article-heading">
+          <div class="article-heading-border border-yellow-400">FAQ</div>
+        </h2>
+        <div class="my-4">
+          <p class="font-bold">Is there a COVID-19 vaccine requirement?</p>
+          <p>
+            We are requiring that all guests who are able to have received a
+            COVID-19 vaccine. In addition, we would prefer that guests are also
+            up to date on their booster shots. Finally, please comply with the
+            masking rules of any of our venues. For more information, visit the
+            <a
+              class="link"
+              href="https://www.mass.gov/covid-19-updates-and-information"
+              target="_blank"
+              >Massachusetts COVID-19 website</a
+            >.
+          </p>
+        </div>
+        <!-- <div class="my-4">
+          <p class="font-bold">
+            What is bus schedule for the Wedding Celebration?
+          </p>
+          <p>
+            We will have two buses that will depart Alewife Station around
+            1:15pm, travel to the Hilton to pick up additional guests around
+            1:45pm, then arrive at Lord Hobo by 2:00pm. An early bus will depart
+            Lord Hobo for the Hilton at 5:00pm. Both buses will then depart Lord
+            Hobo at 6:15pm, stopping at both the Hilton and afterparty venue.
+            There will be no bus transportation back from the afterparty or to
+            the Monday brunch.
+          </p>
+        </div> -->
+        <div class="my-4">
+          <p class="font-bold">Who else can I bring with me?</p>
+          <p>
+            Significant others are welcome! Please include them when you fill
+            out the RSVP form so we can plan accordingly. Children are also
+            welcome, though unfortunately they won't be able to enjoy any beer.
+          </p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">
+            I'm gonna take lots of photos! How do I share them with you?
+          </p>
+          <p>
+            The best way to share your photos is to add them to this
+            <a
+              class="link"
+              href="https://drive.google.com/drive/folders/1kuGM-Q09FrbGTAzV3YbeFscqlpvGcrF1?usp=sharing"
+              target="_blank"
+              >Google Drive folder</a
+            >. You can also share them on social media with the hashtag
+            <span class="italic">#benjauren2022</span> so that we can find them
+            later. We won't have a professional photographer at the party, so
+            please take lots of photos!
+          </p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">Is there a dress code for any of the events?</p>
+          <p>Nope! Please do wear clothes though.</p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">
+            I don't actually like beer. Will there be other drinks?
+          </p>
+          <p>
+            Of course! Lord Hobo also serves wine and has a guest cider on tap.
+            There will be no spirits or cocktails at Lord Hobo. To get an idea
+            for what will be on tap, check out
+            <a class="link" href="https://lordhobo.com/woburn/" target="_blank"
+              >the taproom website.</a
+            >
+          </p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">Will there be any child care available?</p>
+          <p>Maybe? Still figuring that part out. More info coming soon!</p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">Can I pet your dog?</p>
+          <p>
+            Unfortunately, Dusty will be boarded the whole weekend. You can
+            always look at
+            <a
+              class="link"
+              href="https://photos.app.goo.gl/qWza3ddtB6vHTKHs7"
+              target="_blank"
+              >like a million photos of him</a
+            >
+            on Google Photos or
+            <a
+              class="link"
+              href="https://www.instagram.com/dustobustogram/"
+              target="_blank"
+              >follow him on Instagram</a
+            >.
+          </p>
+        </div>
+        <div class="my-4">
+          <p class="font-bold">
+            I'm hopelessly lost and don't know what to do!
+          </p>
+          <p>
+            If you have questions, feel free to email Ben at
+            <a class="link" href="mailto:blcentra@gmail.com" target="_blank"
+              >blcentra@gmail.com</a
+            >
+            or text him at&nbsp;<tel>(845) 826-5456</tel>.
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer class="text-center">
+      <div class="px8 w-full md:w-1/2 md:p-0 md:m-auto">
+        <img
+          src="./src/images/fambly1.jpg"
+          class="shadow-md"
+          alt="Bonus picture of Ben, Lauren, and Dusty!"
+        />
       </div>
-      <div class='my-4'>
-        <p class='font-bold'>I'm hopelessly lost and don't know what to do!</p>
-        <p>If you have questions, feel free to email Ben at <a class='link' href="mailto:blcentra@gmail.com"
-            target="_blank">blcentra@gmail.com</a> or text him at&nbsp;<tel>(845) 826-5456</tel>.</p>
-      </div>
-    </article>
-  </section>
-  <footer class='text-center'>
-    <div class='px8 w-full md:w-1/2 md:p-0 md:m-auto'><img src="./src/images/fambly1.jpg" class='shadow-md'
-        alt='Bonus picture of Ben, Lauren, and Dusty!' /></div>
-    <p class='text-sm text-gray-600 my-4'>© 2022 Ben Centra. All Rights Reserved.</p>
-  </footer>
-</body>
+      <p class="text-sm text-gray-600 my-4">
+        © 2022 Ben Centra. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
 
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.getRegistrations().then(function (registrations) {
-        for (let registration of registrations) {
-          registration.unregister()
-        }
-      })
-      // navigator.serviceWorker
-      //   .register("service-worker.js")
-      //   .then((registration) => {
-      //     console.log("Service Worker registered: ", registration);
-      //   })
-      //   .catch((registrationError) => {
-      //     console.error("Service Worker registration failed: ", registrationError);
-      //   });
-    });
-  }
-</script>
-
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .getRegistrations()
+          .then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+          });
+        // navigator.serviceWorker
+        //   .register("service-worker.js")
+        //   .then((registration) => {
+        //     console.log("Service Worker registered: ", registration);
+        //   })
+        //   .catch((registrationError) => {
+        //     console.error("Service Worker registration failed: ", registrationError);
+        //   });
+      });
+    }
+  </script>
 </html>
