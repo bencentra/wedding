@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p, li {
+  font-size: 1.05rem;
+}
+
 @layer components {
   .nav-link {
     @apply px-8 py-4 transition-colors;
