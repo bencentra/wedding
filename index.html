@@ -120,12 +120,7 @@
         <div class="flex flex-col md:flex-row items-center justify-center">
           <div class="md:w-2/5">
             <div class="flex justify-center items-center">
-              <img
-                id="carousel"
-                src="./src/images/ceremony1.png"
-                alt="Lauren & Ben getting married at Barnegat Light, NJ."
-                class="shadow-md"
-              />
+              <img id="carousel" class="shadow-md" />
             </div>
             <div class="flex mt-2 justify-center items-center">
               <div id="prev" class="carousel-btn">
@@ -176,12 +171,19 @@
           </h3>
           <div class="text-xl">Sunday, August 14th, 2022</div>
           <div class="text-lg">2:00pm to 6:00pm</div>
-          <div class="md:w-2/3 my-4 flex justify-center">
-            <img
-              src="./src/images/lordhobo.jpg"
-              class="shadow-md"
-              alt="Exterior of Lord Hobo in Woburn"
-            />
+          <div class="md:w-2/3 my-4 flex flex-col justify-center">
+            <div class="flex justify-center items-center">
+              <img id="carousel2" class="shadow-md" />
+            </div>
+            <div class="flex mt-2 justify-center items-center">
+              <div id="prev2" class="carousel-btn">
+                <img width="12" src="./src/images/left-caret.png" />
+              </div>
+              <div id="dots2" class="flex items-center"></div>
+              <div id="next2" class="carousel-btn">
+                <img width="12" src="./src/images/right-caret.png" />
+              </div>
+            </div>
           </div>
           <ul>
             <li class="font-bold">Lord Hobo Brewing Company</li>
@@ -210,7 +212,9 @@
           </p>
         </div>
         <h3 class="article-heading text-2xl">
-          <div class="article-heading-border border-b-2" id="bus-schedule">Bus Schedule</div>
+          <div class="article-heading-border border-b-2" id="bus-schedule">
+            Bus Schedule
+          </div>
         </h3>
         <p class="text-center mb-4">
           All times are approximate, so please arrive early!
@@ -244,13 +248,61 @@
             <span class="font-semibold">6:30pm</span> - Buses arrive at Hotel
           </li>
           <li>
-            <span class="font-semibold">7:00pm</span> - Buses arrive at
-            Afterparty venue (see below!)
+            <span class="font-semibold">7:00pm</span> - Buses arrive at Harvard
+            Square
           </li>
         </ul>
+        <p class="text-center mt-4">
+          The drop-off in Harvard is a short walk to either the Red Line or to
+          the Afterparty (see below).
+        </p>
         <h3 class="article-heading text-2xl">
           <div class="article-heading-border border-b-2">Other Events</div>
         </h3>
+        <p class="text-center">
+          Want to spend even more time with us? We have planned some additional,
+          optional events for you to make the most of the weekend.
+        </p>
+        <div
+          class="
+            flex flex-col-reverse
+            md:flex-row
+            items-center
+            justify-center
+            mt-8
+          "
+        >
+          <div class="pt-2 md:pt-0 md:w-2/3 text-center">
+            <h3 class="text-2xl font-cursive my-4">Casual Hangout</h3>
+            <ul>
+              <li class="font-bold">Lauren & Ben's House</li>
+              <li>
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/VJPWJX9FYpzvfYLq7"
+                  target="_blank"
+                  >13 Shapley Ave, Medford, MA 02155</a
+                >
+              </li>
+              <li>Saturday, August 13th, 2022</li>
+              <li>5:00pm to 9:00pm</li>
+            </ul>
+            <p class="m-4 md:mx-12">
+              If you're in town early and want to say "hi" to Dusty (or us),
+              come hang out at our place! You can drop by for a few minutes or
+              stay for a while. If the weather's nice we'll be out in the
+              backyard. We'll have some snacks and will be pouring Ben's
+              homebrewed beer. Free parking is available on Medford Street.
+            </p>
+          </div>
+          <div class="md:w-1/3">
+            <img
+              class="shadow-md"
+              src="./src/images/backyard1.jpg"
+              alt="Stock photo of breakfast approximating what will be served on Monday"
+            />
+          </div>
+        </div>
         <div class="flex flex-col md:flex-row items-center justify-center mt-8">
           <div class="md:w-1/3">
             <img class="shadow-md" src="./src/images/hongkong2.png" />
@@ -276,6 +328,7 @@
             <p class="m-4 md:mx-12 mt-0">
               Buses will provide transportation from Lord Hobo to Hong Kong.
               However, guests will need to find their own way home afterwards.
+              Uber/Lyft will be the easiest way back to the hotel.
             </p>
           </div>
         </div>
@@ -289,7 +342,7 @@
           "
         >
           <div class="pt-2 md:pt-0 md:w-2/3 text-center">
-            <h3 class="text-2xl font-cursive my-4">Monday Brunch</h3>
+            <h3 class="text-2xl font-cursive my-4">Monday Breakfast</h3>
             <ul>
               <li class="font-bold">Hilton Boston/Woburn - Thompson Hall</li>
               <li>
@@ -305,12 +358,16 @@
             </ul>
             <p class="m-4 md:mx-12">
               Before heading home, come enjoy some light refreshments and hang
-              out in a more relaxed environment. Brunch is complementary and
+              out in a more relaxed environment. Breakfast is complimentary and
               open to everyone, even if you are not staying at the hotel.
             </p>
           </div>
           <div class="md:w-1/3">
-            <img class="shadow-md" src="./src/images/brunch.jpg" />
+            <img
+              class="shadow-md"
+              src="./src/images/breakfast.jpg"
+              alt="Stock photo of breakfast approximating what will be served on Monday"
+            />
           </div>
         </div>
       </article>
@@ -357,12 +414,18 @@
             </ul>
             <p class="mt-4 lg:mb-4">
               We have reserved rooms at the Hilton in Woburn, which lets you
-              book at a discounted rate! There are limited amount but we can add
-              more, so please
+              book at a
+              <a
+                class="link"
+                href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=BOSBWHF&groupCode=DCW13&arrivaldate=2022-08-13&departuredate=2022-08-15&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
+                target="_blank"
+                >discounted rate</a
+              >! There are limited amount but we can add more. To ensure you get
+              the discounted rate, please book by July 22nd. Please
               <a class="link" href="mailto:blcentra@gmail.com" target="_blank"
                 >reach out</a
               >
-              with any issues.
+              if you have any issues.
             </p>
             <div class="button-group">
               <a
@@ -389,7 +452,7 @@
             target="_blank"
             >this RSVP survey</a
           >
-          by <span class="italic">July 25th, 2022</span>.
+          by July 25th, 2022.
         </p>
         <div class="button-group">
           <a
@@ -531,9 +594,10 @@
             Our main event at Lord Hobo will be a mix of indoor and outdoor
             spaces. The outdoor patio connects to one of the beer halls via open
             garage doors. We've rented the whole brewery for our private event.
-            The afterparty at Hong Kong is indoors in a private room. Monday
-            Brunch at the hotel will be indoors as well, in a private function
-            room.
+            The afterparty at Hong Kong is indoors in a private room. Our
+            Saturday Hangout will in our backyard if the weather is nice. Monday
+            Breakfast at the hotel will be indoors as well, in a private
+            function room.
           </p>
         </div>
         <div class="my-4">
@@ -590,7 +654,7 @@
             How do you recommend getting around town from the hotel?
           </p>
           <p>
-            On the day of, check out the
+            On the 14th, check out the
             <a class="link" href="#bus-schedule">bus schedule</a> for getting to
             and from the party. Note that there will no bus back from the
             afterparty; to get back to the hotel, we recommend taking an Uber or
@@ -621,7 +685,7 @@
           <p>
             We've had many good times and made many great memories here in
             Boston. Below is a list of some of our favorite places and
-            activities, as well as the classics for folks just visiting.
+            activities, as well as some of the classics.
           </p>
           <details>
             <summary class="py-4 cursor-pointer">
@@ -675,8 +739,11 @@
         <div class="my-4">
           <p class="font-bold">Can I pet your dog?</p>
           <p>
-            Unfortunately, Dusty will be boarded the whole weekend. You can
-            always look at
+            Dusty can get a bit nervous around new people, but he's a sweetie
+            once he gets comfortable. If you really want to meet him, swing by
+            our place on Saturday evening and we'll introduce you! Unfortuately,
+            Dusty will be boarded the rest of the weekend. You can always look
+            at
             <a
               class="link"
               href="https://photos.app.goo.gl/qWza3ddtB6vHTKHs7"
