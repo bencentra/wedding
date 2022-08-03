@@ -33,6 +33,10 @@ p, li {
     @apply relative h-0 -top-20;
   }
 
+  .subheading-anchor {
+    @apply relative h-0 -top-10;
+  }
+
   .article-heading {
     @apply font-cursive text-4xl font-bold text-center mt-8 mb-4;
   }
